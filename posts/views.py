@@ -27,7 +27,7 @@ class PostDetailView(LoginRequiredMixin, DetailView):
 
     template_name = 'posts/detail.html'
     queryset = Post.objects.all()
-    context_object_name = 'post'
+    context_object_name = 'posts'
 
 class CreatePostView(LoginRequiredMixin, CreateView):
     """Create a new post."""
